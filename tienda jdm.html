@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JDM Culture - Tienda de Autopartes</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* FONDO PERSONALIZADO DE LA SECCIÓN TIENDA */
+        .bg-tienda {
+            /* === PONE AQUÍ TU IMAGEN DE FONDO === */
+            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('img/fondo-tienda.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* ESTILOS PARA LAS TARJETAS DE TIENDAS DE AUTOPARTES */
+        .tienda-card {
+            background: rgba(20, 20, 20, 0.85);
+            border: 1px solid #333;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tienda-card:hover {
+            transform: translateY(-5px);
+            border-color: #ff0000;
+        }
+
+        .tienda-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .tienda-info {
+            padding: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
+        }
+
+        .tienda-info h3 {
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .tienda-info p {
+            color: #ccc;
+            font-size: 0.9rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .btn-tienda {
+            display: inline-block;
+            background: #ff0000;
+            color: #ffffff;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .btn-tienda:hover {
+            background: #cc0000;
+        }
+    </style>
+</head>
+<body class="bg-index bg-tienda">
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="navbar">
+        <div class="logo">JDM<span>CULTURE</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="jdm.html">JDM</a></li>
+                <li><a href="drift.html">Drift</a></li>
+                <li><a href="kanjozoku.html">Kanjozoku</a></li>
+                <li><a href="midnightclub.html">Midnight Club</a></li>
+                <li><a href="vip.html">VIP Style</a></li>
+                <li><a href="bosozoku.html">Bosozoku</a></li>
+                <li><a href="keicar.html">Kei Cars</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="tienda jdm.html">Tienda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container">
+        <h1>Tienda de Autopartes JDM</h1>
+        <p>Conéctate directamente con las mejores tiendas especializadas en repuestos, accesorios e importación de piezas japonesas.</p>
+
+        <!-- CAJA DESPLEGABLE DE INFORMACIÓN -->
+        <details class="story-box">
+            <summary>¿Dónde comprar repuestos JDM originales?</summary>
+            <div class="story-content">
+                <p>Te recomendamos 3 de las plataformas más influyentes y confiables del mundo para conseguir desde piezas OEM de reemplazo hasta componentes de alto rendimiento para tu proyecto.</p>
+            </div>
+        </details>
+
+        <h2>Tiendas Recomendadas</h2>
+        
+        <!-- GRILLA DE LAS 3 TIENDAS -->
+        <div class="media-grid">
+
+            <!-- ================= TIENDA 1 ================= -->
+            <div class="tienda-card">
+                <!-- === RUTA DE ENLACE E IMAGEN DE TIENDA 1 === -->
+                <a href="https://www.nengun.com/" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAnlBVyc05MQuHqGTrt4qB5l813Gb5mAXVL0CsWPieMcLFI28YBiuoysL4&s=10" alt="Tienda Nengun Performance">
+                </a>
+                <div class="tienda-info">
+                    <div>
+                        <h3>Nengun Performance</h3>
+                        <p>Importación directa desde Japón de piezas OEM y de alto rendimiento para motores y chasis JDM.</p>
+                    </div>
+                    <!-- === ENLACE DEL BOTÓN TIENDA 1 === -->
+                    <a href="https://www.nengun.com/" target="_blank" class="btn-tienda">Ir a la Tienda</a>
+                </div>
+            </div>
+
+            <!-- ================= TIENDA 2 ================= -->
+            <div class="tienda-card">
+                <!-- === RUTA DE ENLACE E IMAGEN DE TIENDA 2 === -->
+                <a href="https://www.rhdjapan.com/" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRth5BDPRjxdbCvxI1Sjnz6oxDONJKSqMRnZc6oX3kbfQ&s=10" alt="Tienda RHDJapan">
+                </a>
+                <div class="tienda-info">
+                    <div>
+                        <h3>RHDJapan</h3>
+                        <p>Especialistas en autopartes de marcas legendarias como Spoon, HKS, Cusco, Bride y Nardi.</p>
+                    </div>
+                    <!-- === ENLACE DEL BOTÓN TIENDA 2 === -->
+                    <a href="https://www.rhdjapan.com/" target="_blank" class="btn-tienda">Ir a la Tienda</a>
+                </div>
+            </div>
+
+            <!-- ================= TIENDA 3 ================= -->
+            <div class="tienda-card">
+                <!-- === RUTA DE ENLACE E IMAGEN DE TIENDA 3 === -->
+                <a href="https://www.croooober.com/" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToVOGcoz4fYKJ30ShjuhwswoaEKU5VJZQpZjd2XasNaw&s=10" alt="Tienda Croooober UpGarage">
+                </a>
+                <div class="tienda-info">
+                    <div>
+                        <h3>Croooober (UpGarage)</h3>
+                        <p>El mercado más grande de partes JDM usadas y de segunda mano directo desde los garajes japoneses.</p>
+                    </div>
+                    <!-- === ENLACE DEL BOTÓN TIENDA 3 === -->
+                    <a href="https://www.croooober.com/" target="_blank" class="btn-tienda">Ir a la Tienda</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2026 Cultura Automotriz Japonesa.</p>
+    </footer>
+
+</body>
+</html>

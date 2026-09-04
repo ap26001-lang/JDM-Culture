@@ -1,0 +1,195 @@
+/* Reset y bases */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: #e0e0e0;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Clases de Fondo Alusivos por Categoría */
+body.bg-index {
+    background: linear-gradient(rgba(10, 10, 12, 0.88), rgba(10, 10, 12, 0.88)), url('https://i.pinimg.com/1200x/7e/6f/9f/7e6f9f91152b6bb40ff90a5e09919573.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+body.bg-jdm {
+    background: linear-gradient(rgba(10, 10, 12, 0.88), rgba(10, 10, 12, 0.88)), url('https://i.pinimg.com/736x/79/38/52/7938521911ed0028d9ab925124a755c6.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+body.bg-drift {
+    background: linear-gradient(rgba(10, 10, 12, 0.88), rgba(10, 10, 12, 0.88)), url('https://i.pinimg.com/736x/16/4e/5d/164e5df8b0e638c744a124a5dded8a35.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+body.bg-kanjozoku {
+    background: linear-gradient(rgba(10, 10, 12, 0.88), rgba(10, 10, 12, 0.88)), url('https://i.pinimg.com/1200x/56/71/7a/56717ad1b6e1912d1a35bad3351f2e80.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+body.bg-midnight {
+    background: linear-gradient(rgba(10, 10, 12, 0.88), rgba(10, 10, 12, 0.88)), url('https://i.pinimg.com/1200x/85/5f/62/855f627d280881d13416aa193d4dd4c5.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+body.bg-vip {
+    background: linear-gradient(rgba(10, 10, 12, 0.88), rgba(10, 10, 12, 0.88)), url('https://i.pinimg.com/1200x/97/45/ca/9745cab35c9c5200d8011bfbf2e74157.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+body.bg-bosozoku {
+    background: linear-gradient(rgba(10, 10, 12, 0.88), rgba(10, 10, 12, 0.88)), url('img/bg-bosozoku.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+body.bg-keicar {
+    background: linear-gradient(rgba(10, 10, 12, 0.88), rgba(10, 10, 12, 0.88)), url('img/bg-keicar.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(15, 15, 20, 0.95);
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #ff2a2a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #ff2a2a;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.navbar a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: #fff;
+    background-color: #ff2a2a;
+}
+
+/* Contenedor Principal */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    border-left: 4px solid #ff2a2a;
+    padding-left: 0.8rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: #fff;
+    margin: 2rem 0 1rem;
+}
+
+/* Cuadro Desplegable de Historia */
+.story-box {
+    background-color: rgba(22, 22, 30, 0.9);
+    border: 1px solid #333;
+    border-left: 4px solid #ff2a2a;
+    border-radius: 6px;
+    margin: 1.5rem 0;
+    overflow: hidden;
+}
+
+.story-box summary {
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgba(30, 30, 40, 0.9);
+    transition: background 0.3s;
+}
+
+.story-box summary:hover {
+    background-color: rgba(40, 40, 55, 0.9);
+}
+
+.story-content {
+    padding: 1.2rem;
+    font-size: 0.95rem;
+}
+
+.story-content p {
+    margin-bottom: 0.8rem;
+}
+
+.story-content ul {
+    margin-left: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+/* Galería de 5 imágenes */
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.2rem;
+}
+
+.card-media {
+    background-color: rgba(20, 20, 28, 0.85);
+    border: 1px solid #2a2a35;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.card-media:hover {
+    transform: translateY(-5px);
+    border-color: #ff2a2a;
+}
+
+.card-media img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-media p {
+    padding: 0.8rem;
+    font-size: 0.85rem;
+    text-align: center;
+    color: #bbb;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: rgba(10, 10, 15, 0.95);
+    border-top: 1px solid #222;
+    margin-top: 3rem;
+    font-size: 0.85rem;
+    color: #777;
+}
