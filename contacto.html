@@ -6,7 +6,7 @@
     <title>Contacto - JDM Culture</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-index">
+<body class="bg-contacto">
 
     <header class="navbar">
         <div class="logo">JDM<span>CULTURE</span></div>
@@ -27,30 +27,40 @@
     </header>
 
     <main class="container">
-        <h1>Contacto</h1>
         <p>¿Tienes sugerencias o deseas aportar material a la comunidad? Envíanos un mensaje.</p>
 
-        <details class="story-box">
+        <details class="story-box" open>
             <summary>Formulario de Contacto del Proyecto</summary>
             <div class="story-content">
                 <p>Completa los datos necesarios a continuación. Estaremos revisando las contribuciones periódicamente.</p>
+                
+                <!-- FORMULARIO VINCULADO DIRECTAMENTE A TU CORREO -->
+                <form action="https://formsubmit.co/omarenrique382@gmail.com" method="POST" class="contacto-form">
+                    
+                    <!-- Configuraciones automáticas de FormSubmit -->
+                    <input type="hidden" name="_subject" value="Nuevo mensaje desde JDM Culture">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="Nombre" placeholder="Tu nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="Correo" placeholder="correo@ejemplo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="Mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                </form>
             </div>
         </details>
-
-        <div style="background-color: rgba(20, 20, 28, 0.85); padding: 1.5rem; border-radius: 8px; border: 1px solid #2a2a35; max-width: 600px; margin-top: 1rem;">
-            <form action="#" method="post" style="display: flex; flex-direction: column; gap: 1rem;">
-                <label for="nombre" style="color: #fff;">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required style="padding: 0.6rem; border-radius: 4px; border: 1px solid #444; background: #111; color: #fff;">
-
-                <label for="email" style="color: #fff;">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required style="padding: 0.6rem; border-radius: 4px; border: 1px solid #444; background: #111; color: #fff;">
-
-                <label for="mensaje" style="color: #fff;">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required style="padding: 0.6rem; border-radius: 4px; border: 1px solid #444; background: #111; color: #fff;"></textarea>
-
-                <button type="submit" style="padding: 0.7rem; background-color: #ff2a2a; color: #fff; border: none; border-radius: 4px; font-weight: bold; cursor: pointer;">Enviar Mensaje</button>
-            </form>
-        </div>
     </main>
 
     <footer>
